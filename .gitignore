@@ -2,10 +2,10 @@
 
 # dependencies
 /node_modules
+_cacache
 /.pnp
 .pnp.js
-/_cacache
-/_logs
+_logs
 
 # testing
 /coverage
