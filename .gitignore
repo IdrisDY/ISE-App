@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-_cacache
+/_cacache
 /.pnp
 .pnp.js
 _logs
