@@ -1,14 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import VueJobs from './VueJobs';
-import Homepage from './Components/homepage';
+import {Homepage,TextContent} from './Components/homepage';
 import LoginPage from './Components/LoginPage';
-import Dashboard from './Components/Dashboard';
+import mainImg from './Components/assets/93.png'
+import iphoneImg from './Components/assets/Dashboard_iphonexspacegrey_portrait.png'
+import { Register } from './Components/Register';
+
 
 function App() {
   return (
     <div className="App">
-   <Dashboard/>
+      <LoginPage/> 
     </div> 
   );
 }

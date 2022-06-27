@@ -1,0 +1,90 @@
+.container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   font-size: 18px;
+   overflow: hidden;
+}
+.closeBtndiv{
+   display: flex;
+   justify-content: end;
+}
+.bgbrown{
+   background-color:#FA58051A ;
+padding: 0 2em;
+}
+
+.logoWhite{
+position: relative;
+top: -1em;
+}
+.regDiv{
+   background: #FFFFFF;
+   padding: 1.35em;
+   display: flex;
+   flex-direction: column;
+   gap: 2.5em;
+}
+.imgResize{
+   width: 40px;
+   height: 40px;
+}
+button{
+   background: none;
+   border: none;
+}
+.pReg{
+   font-size:2rem ;
+color: #FA5805;
+line-height: 43px;
+font-weight: 700;
+}
+.txtLogo{
+   display: flex;
+   position: relative;
+height: 10%;
+padding-top: 2em;}
+.txtLogo::after{
+   content: '';
+   height: 2.58px;
+   width: 100%;
+   background: rgb(0, 0, 0);
+   position: absolute;
+   bottom: 0;
+   left: 20%;
+}
+.logo{
+   position: relative;
+   top: -1.3em;
+   left: .8em;
+   height: 106px;
+}
+.registerDetails{
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   padding: 0 1.37em;
+}
+h6{
+   font-weight: 400;
+}
+h2{
+   font-weight: 500;
+   line-height: 36px;
+}
+.btnblackdiv{
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 3em;
+   padding-right: 1.35em;
+}
+.btnBlack{
+   background: black;
+   color: white;
+   border-radius: 0 30px 30px 0;
+   min-width: 30%;
+   padding: .5em .5em .5em 0 ;
+   font-size: 1.125rem;
+}
+h1{
+  max-width: 100%;
+}

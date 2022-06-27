@@ -4,7 +4,6 @@ import logo from './assets/Logo.svg'
 import avatar from './assets/Vector.png'
 import  search from './assets/Search.svg'
 import filter from './assets/Filter.svg'
-import Filter from './assets/filterreal.svg'
 import LogoBlack from './assets/LogoBlack.svg'
 const Dashboard = () => {
 
@@ -12,7 +11,7 @@ const JobDescription = ()=>{
    return(
       <div className={dashStyles.jobDesc}>
 <div className={dashStyles.subjobDesc}> 
-<img src={logo} className={dashStyles.logoRepo} />
+<img src={logo} className={dashStyles.logoRepo} alt='logo' />
 <div className={dashStyles.reduce}>
 <h2> FrontEnd Developer</h2>
 <p> Oga Ise - FullTime</p>
