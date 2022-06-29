@@ -19,7 +19,7 @@ export const Register = () => {
       <button><img src={closeImg} alt='close' className={styles.imgResize}/> </button>
       </div>
       <div className={ styles.txtLogo}>
-         <p className={styles.pReg}> Register to Ise </p>
+         <p className={styles.pReg}> Register to </p>
       <img src={LogoBlack} alt='logo' className={styles.logo}/>
       </div>
       <div className={styles.registerDetails}>
@@ -44,7 +44,7 @@ export const Register = () => {
 
 
       </div>
-      <div className={styles.btnblackdiv}>
+      <div className={styles.btndiv}>
          <button className={styles.btnBlack}> Register</button>
       </div>
        </div>

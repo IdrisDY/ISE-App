@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './assets/Logo.svg'
-const LoginPage = () => {
+const Menu = () => {
   return (
     <div className='Login-content'>
     <div className='Login-div'>
@@ -17,4 +17,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default Menu

@@ -1,15 +1,20 @@
 import './App.css';
 import {Homepage,TextContent} from './Components/homepage';
-import LoginPage from './Components/LoginPage';
+import Menu from './Components/Menu'
 import mainImg from './Components/assets/93.png'
 import iphoneImg from './Components/assets/Dashboard_iphonexspacegrey_portrait.png'
 import { Register } from './Components/Register';
-
+import LoginPage from './Components/Login';
+import { ThumbsUp } from './Components/ThumbsUp';
+import Blow from './Components/Blow';
 
 function App() {
   return (
     <div className="App">
-      <LoginPage/> 
+      {/* <Homepage/>  */}
+      {/* <Register/>  */}
+      {/* <ThumbsUp/>  */}
+      <Blow/>
     </div> 
   );
 }

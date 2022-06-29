@@ -6,7 +6,7 @@
 }
 .closeBtndiv{
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
 }
 .bgbrown{
    background-color:#FA58051A ;
@@ -24,6 +24,15 @@ top: -1em;
    flex-direction: column;
    gap: 2.5em;
 }
+.logDiv{
+   background: black;
+   display: flex;
+   flex-direction: column;
+   gap: 3.5em;
+   padding: 1.35em;
+
+}
+
 .imgResize{
    width: 40px;
    height: 40px;
@@ -43,6 +52,12 @@ font-weight: 700;
    position: relative;
 height: 10%;
 padding-top: 2em;}
+.txtLogoLogin{
+   display: flex;
+   position: relative;
+height: 10%;
+padding-top: 2em;}
+
 .txtLogo::after{
    content: '';
    height: 2.58px;
@@ -52,6 +67,18 @@ padding-top: 2em;}
    bottom: 0;
    left: 20%;
 }
+.txtLogoLogin::after{
+   content: '';
+   height: 2.58px;
+   width: 100%;
+   background: rgb(255, 255, 255);
+   position: absolute;
+   bottom: 0;
+   left: 20%;
+}
+
+
+
 .logo{
    position: relative;
    top: -1.3em;
@@ -71,10 +98,10 @@ h2{
    font-weight: 500;
    line-height: 36px;
 }
-.btnblackdiv{
+.btndiv{
    display: flex;
    justify-content: flex-end;
-   padding-top: 3em;
+   padding-top: 3.5em;
    padding-right: 1.35em;
 }
 .btnBlack{
@@ -85,6 +112,21 @@ h2{
    padding: .5em .5em .5em 0 ;
    font-size: 1.125rem;
 }
+.loginBtn{
+   background: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   border-radius: 0 30px 30px 0;
+   min-width: 30%;
+   padding: .5em .5em .5em 0 ;
+   font-size: 1.125rem;
+}
+
 h1{
   max-width: 100%;
+}
+.txtWhite{
+   color: white;
+}
+.h6white{
+   color: #FFFFFF40;
 }
