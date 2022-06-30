@@ -70,8 +70,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 border-radius: 100%;
-width:770px;
-height: 550px;
+width:70%;
+height: 90vh;
 }
 .intro-text-content{
   display: flex;
@@ -84,6 +84,10 @@ height: 550px;
   /* margin: 0 auto; */
   padding: 1em 0;
   
+}
+.iphoneImg{
+  position: relative;
+
 }
 .img-div-cover{
   display: flex;

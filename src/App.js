@@ -7,14 +7,17 @@ import { Register } from './Components/Register';
 import LoginPage from './Components/Login';
 import { ThumbsUp } from './Components/ThumbsUp';
 import Blow from './Components/Blow';
+import Modal from './Components/Modal';
+import Dashboard from './Components/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      {/* <Homepage/>  */}
-      {/* <Register/>  */}
-      {/* <ThumbsUp/>  */}
-      <Blow/>
+      {/* <Homepage homeImg={iphoneImg}/>  */}
+      <Dashboard/>
+
+      <Modal/> 
+      {/* <Blow/> */}
     </div> 
   );
 }

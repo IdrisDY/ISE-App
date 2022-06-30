@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from './assets/Logo.svg'
 import mainImg from './assets/93.png'
+import iphoneImg from './assets/Dashboard_iphonexspacegrey_portrait.png'
+
 
 export function TextContent() {
   return(
@@ -33,7 +35,7 @@ export function Homepage({homeImg}) {
 <section className='home-main'>
 <TextContent/>
    <div className='intro-content-img'>
-<img src={homeImg} alt='' className='mainImg'/>
+<img src={homeImg} alt='' className= {homeImg == {iphoneImg}?'mainImg':'mainImg'}/>
 
 
 </div>
