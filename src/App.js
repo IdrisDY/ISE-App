@@ -13,10 +13,10 @@ import Dashboard from './Components/Dashboard';
 function App() {
   return (
     <div className="App">
-      {/* <Homepage homeImg={iphoneImg}/>  */}
-      <Dashboard/>
+      {/* <Homepage homeImg={mainImg}/>  */}
+        <LoginPage/>
 
-      <Modal/> 
+      {/* <Modal/>  */}
       {/* <Blow/> */}
     </div> 
   );

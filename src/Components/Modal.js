@@ -4,14 +4,14 @@ import logo from './assets/Logo.svg'
 import closeImg from './assets/Union.svg'
 
 
-const Modal = () => {
+const Modal = ({closeModalClick}) => {
   return (
     <div className={styles.container}>
 <div className={styles.modalContent}> 
 <div className={styles.bigGrid}> 
 <div className={styles.txtlogo}>
-<img src={logo} className={styles.logoRepo} alt='logo' />
-<div className={styles.reduce}>
+<img src={logo} className={styles.logoChange} alt='logo' />
+<div className={styles.txtTitle}>
 <h2> FrontEnd Developer</h2>
 <p> Oga Ise - FullTime</p>
 </div>
@@ -38,13 +38,14 @@ investigations, updates, and implementing security features.
 
 </div>
 <div className={styles.smallGrid} >
-<img src={closeImg} alt='close' className={styles.logoResize}/>
+<img src={closeImg} alt='close' className={styles.logoResize} onClick={closeModalClick} />
 <div className={styles.txtOrange}>
   <p> 1 week ago</p>
   <p> Job Type: Full Time</p>
   <p> Hiring from : North America</p>
 </div>
-<div><button className={styles.btn}> Apply for this role</button>
+<div className={styles.btnDiv}>
+<button className={styles.btn}> Apply for this role</button>
 </div>
 </div>
 </div>

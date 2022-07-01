@@ -3,9 +3,21 @@ import dashStyles from './dashboard.module.css'
 import logo from './assets/Logo.svg'
 import avatar from './assets/Vector.png'
 import  search from './assets/Search.svg'
-import filter from './assets/Filter.svg'
+import filter from './assets/FilterIcon.svg'
 import LogoBlack from './assets/LogoBlack.svg'
+import Modal from './Modal'
+import { useState } from 'react'
+
+
 const Dashboard = () => {
+  const [btnclick, setbtnClick] = useState(false)
+  function openModalClick (){
+    setbtnClick(true)
+  }
+  function closeModalClick (){
+    setbtnClick(false)
+  }
+
 
 const JobDescription = ()=>{
    return(
@@ -18,7 +30,7 @@ const JobDescription = ()=>{
 </div>
 </div>
 
-<span> ... </span>
+<button onClick={openModalClick}><span>...</span> </button>
 
       </div>
    )
@@ -59,8 +71,9 @@ const JobDescription = ()=>{
  </section> 
 
  <section className={dashStyles.btnSection}>
-  <button className={dashStyles.saveBtn}> Saved Jobs</button>
+  <button className={dashStyles.saveBtn}  > Saved Jobs</button>
  </section> 
+ {btnclick?<Modal closeModalClick={closeModalClick}/>:null}
 </div>
  
   )

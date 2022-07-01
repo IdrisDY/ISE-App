@@ -14,7 +14,8 @@ const LoginPage = () => {
       </div>
 
       <div className={styles.logDiv}>
-      <div className={styles.closeBtndiv}> 
+      <div className={styles.closeBtndiv}>
+      <img src={logo} alt='logo' className={styles.logo}/> 
       <button><img src={close} alt='close' className={styles.imgResize}/> </button>
       </div>
 

@@ -6,11 +6,11 @@ import iphoneImg from './assets/Dashboard_iphonexspacegrey_portrait.png'
 
 export function TextContent() {
   return(
-<div className='intro-text-content'>
-<h1> Making  <span> job hunting
+<div className='txtContentContainer'>
+<h1 className='txtContentWhite'> Making  <span className='txtContentOrange'> job hunting
 </span> way too easier!
 </h1>
-<p className='intro-p'> One place with the best jobs companies in tech.
+<p className='txtContent-p' > One place with the best jobs companies in tech.
 Apply to all of them with a single profile 
 and get in touh with hiring managers. </p>
 <button className='start-btn'> Get Started</button>
@@ -22,9 +22,9 @@ export function Homepage({homeImg}) {
 
   return (
     <div className='home-container'>
-       <nav>
+       <nav className='nav' >
        <div className='logo-div'>
-<img src={logo} alt='' />
+<img src={logo} alt='' className='homeLogo' />
        </div>
        <div className='menu-line'> 
        <span id='span1'></span>
@@ -33,7 +33,15 @@ export function Homepage({homeImg}) {
         </nav>
 
 <section className='home-main'>
-<TextContent/>
+<div className='intro-text-content'>
+<h1  className='home-text-h1'> Making  <span className='home-span-text'> job hunting
+</span> way too easier!
+</h1>
+<p className='intro-p'> One place with the best jobs companies in tech.
+Apply to all of them with a single profile 
+and get in touh with hiring managers. </p>
+<button className='start-btn'> Get Started</button>
+</div>
    <div className='intro-content-img'>
 <img src={homeImg} alt='' className= {homeImg == {iphoneImg}?'mainImg':'mainImg'}/>
 

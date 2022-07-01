@@ -16,6 +16,8 @@ export const Register = () => {
       <div className={styles.regDiv}>
       
       <div className={styles.closeBtndiv}> 
+      <img src={LogoBlack} alt='logo' className={styles.logoWhiteMobile}/> 
+
       <button><img src={closeImg} alt='close' className={styles.imgResize}/> </button>
       </div>
       <div className={ styles.txtLogo}>

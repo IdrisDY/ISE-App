@@ -121,12 +121,50 @@ h2{
    font-size: 1.125rem;
 }
 
-h1{
+.h1{
   max-width: 100%;
 }
-.txtWhite{
+.txtWhite,p,span{
    color: white;
 }
 .h6white{
    color: #FFFFFF40;
+}
+.logoWhiteMobile{
+   display: none;
+}
+@media(max-width:768px){
+.bgbrown{
+   display: none;
+}
+.logoWhite{
+   display: flex !important;
+}
+.logoWhiteMobile{
+   display: flex;
+}
+.closeBtndiv{
+   justify-content: space-between;
+}
+.regDiv{
+   width: 100%;
+}
+.logDiv{
+   width: 100%;
+}
+
+.container{
+   display: flex;
+}
+.btnBlack,.loginBtn{
+   width: 50%;
+   max-width: 200px;
+}
+.imgResize{
+position: relative;
+top: -1.5em;
+}
+.txtLogoLogin{
+   padding: 0;
+}
 }
