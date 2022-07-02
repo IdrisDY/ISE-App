@@ -26,7 +26,7 @@ const JobDescription = ()=>{
 <img src={logo} className={dashStyles.logoRepo} alt='logo' />
 <div className={dashStyles.reduce}>
 <h2> FrontEnd Developer</h2>
-<p> Oga Ise - FullTime</p>
+<p className={dashStyles.pJob}> Oga Ise - FullTime</p>
 </div>
 </div>
 
@@ -38,15 +38,15 @@ const JobDescription = ()=>{
   return (
    
 <div className= {dashStyles.container}>
- <nav>
+ <nav className= {dashStyles.nav}>
    <img src={LogoBlack} alt='logo' />
    <img src={avatar} className={`${dashStyles.imgResize} ${dashStyles.avatar}`} alt='avatar-img'/>
  </nav> 
 
  <section className={dashStyles.searchContent}>
-   <div>
-   <h1> Hello Jedidiah</h1>
-    <p > Find your Dream Job </p>
+   <div  className={dashStyles.h1Div} >
+   <h1> Hello, Adekunle</h1>
+    <p className={dashStyles.pBlack}> Find your Dream Job </p>
     </div>
    <div  className={dashStyles.searchDiv}>
     <img src={search} alt='search' className={dashStyles.imgResize}/>

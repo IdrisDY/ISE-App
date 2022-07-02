@@ -138,7 +138,7 @@ h2{
    display: none;
 }
 .logoWhite{
-   display: flex !important;
+   display: flex;
 }
 .logoWhiteMobile{
    display: flex;

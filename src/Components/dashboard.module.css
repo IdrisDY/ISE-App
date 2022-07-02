@@ -1,6 +1,6 @@
-nav{
+.nav{
    display: flex;
-/* justify-content: space-around; */
+justify-content: space-between;
 width: 100%;
 }
 .container{
@@ -76,7 +76,7 @@ font-size: 1.8rem;
 .logoRepo{
    position:relative;
    /* top: -.5em; */
-   top: -2.5em;
+   top: -2.8em;
 }
 span{
    color: black;
@@ -91,4 +91,74 @@ span{
    flex-direction: column;
    justify-content: flex-start;
    height: fit-content;
+}
+.pBlack{
+   color: black;
+}
+@media(max-width:768px){
+   .container{
+      width: 100%;
+      min-width: fit-content;
+      padding: 27px 25px;
+   }
+   .jobGrid{
+      display: flex;
+      flex-direction: column;
+      gap: 0em;
+   }
+   .searchContent{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      letter-spacing: 1px;
+   }
+   .searchDiv{
+      justify-content: space-between;
+      gap: 0;
+      max-width: 400px;
+   }
+   .h1Div{
+      position: relative;
+      top: -2em;
+      letter-spacing: 2px;
+   }
+   .h1Div h1{
+      font-size: 20px;
+      font-weight: 700;
+      padding: .5em 0;
+
+   }
+   .pBlack{
+      font-size: 15px;
+      font-weight: 400;
+
+
+   }
+   h2{
+      font-size: 13px;
+      letter-spacing: 1.5px;
+font-weight:700;
+   }
+   .jobDesc{
+padding: 0 .8em 0 0;
+   }
+   .reduce{
+      position: relative;
+      left: -1em;
+   }
+   .logoRepo{
+      right: .5em;
+   }
+   .pJob{
+      font-size: 10px;
+      color: black;
+   }
+   .recent{
+      color: black;
+      font-size: 13px;
+   }
+   .btnSection{
+      position: relative;
+      top: -2em;
+   }
 }

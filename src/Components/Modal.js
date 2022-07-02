@@ -7,15 +7,21 @@ import closeImg from './assets/Union.svg'
 const Modal = ({closeModalClick}) => {
   return (
     <div className={styles.container}>
-<div className={styles.modalContent}> 
-<div className={styles.bigGrid}> 
+<div className={styles.modalContent}>
+<div className={styles.nav}>
 <div className={styles.txtlogo}>
 <img src={logo} className={styles.logoChange} alt='logo' />
 <div className={styles.txtTitle}>
 <h2> FrontEnd Developer</h2>
-<p> Oga Ise - FullTime</p>
+<p className={styles.pBlack} > Oga Ise - FullTime</p>
 </div>
 </div>
+
+<img src={closeImg} alt='close' className={styles.logoResize} onClick={closeModalClick} />
+
+</div> 
+<div className={styles.mainContent} >
+<div className={styles.bigGrid}> 
 <div>
 <h3 className={styles.h3}> Job Description</h3>
 <article className={styles.article}>
@@ -27,10 +33,12 @@ others learn as well. We want to work with people who enjoy picking up a
 problem and solving it, regardless of the technologies and techniques involved.
 <br/>
 <br/>
+<span className={styles.spanArticle} >
 The Aha! security team is part of the engineering team and is product focused.
  As a Senior Security Engineer, you can expect to spend the majority of your time
  working with Ruby on Rails and JavaScript code for security reviews, 
 investigations, updates, and implementing security features.
+</span>
 
 </article>
 
@@ -38,7 +46,6 @@ investigations, updates, and implementing security features.
 
 </div>
 <div className={styles.smallGrid} >
-<img src={closeImg} alt='close' className={styles.logoResize} onClick={closeModalClick} />
 <div className={styles.txtOrange}>
   <p> 1 week ago</p>
   <p> Job Type: Full Time</p>
@@ -47,6 +54,8 @@ investigations, updates, and implementing security features.
 <div className={styles.btnDiv}>
 <button className={styles.btn}> Apply for this role</button>
 </div>
+</div>
+
 </div>
 </div>
 
