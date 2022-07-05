@@ -5,7 +5,7 @@
 body{
  font-size: 18px;
  background: #000000;
-
+font-family: 'DM Sans', sans-serif;
 }
 a{
   color: black;
@@ -106,7 +106,7 @@ height: 90vh;
 min-width: 50%;
 }
 .mainImg{
-  /* width: 50%; */
+  width: 50%;
   /* margin: 0 auto; */
   padding: 1em 0;
   
@@ -233,7 +233,7 @@ flex-direction: column;
   }
   .mainImg{
     /* min-width: 500px; */
-    width:200%;
+    /* width:10%; */
     height: 100%;
 display: flex;
 align-self: center;
