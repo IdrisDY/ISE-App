@@ -7,10 +7,11 @@ import filter from './assets/FilterIcon.svg'
 import LogoBlack from './assets/LogoBlack.svg'
 import Modal from './Modal'
 import { useState } from 'react'
-
-
 const Dashboard = () => {
   const [btnclick, setbtnClick] = useState(false)
+
+
+
   function openModalClick (){
     setbtnClick(true)
   }

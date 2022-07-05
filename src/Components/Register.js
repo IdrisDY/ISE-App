@@ -4,6 +4,8 @@ import { TextContent } from './homepage'
 import closeImg from './assets/Union.svg'
 import LogoBlack from './assets/LogoBlack.svg'
 import  logo from './assets/Logo.svg'
+import { Link } from 'react-router-dom'
+
 
 export const Register = () => {
   return (
@@ -18,7 +20,8 @@ export const Register = () => {
       <div className={styles.closeBtndiv}> 
       <img src={LogoBlack} alt='logo' className={styles.logoWhiteMobile}/> 
 
-      <button><img src={closeImg} alt='close' className={styles.imgResize}/> </button>
+      <Link to='/menu' >      <button><img src={closeImg} alt='close' className={styles.imgResize}/> </button>
+</Link>
       </div>
       <div className={ styles.txtLogo}>
          <p className={styles.pReg}> Register to </p>
@@ -47,7 +50,9 @@ export const Register = () => {
 
       </div>
       <div className={styles.btndiv}>
-         <button className={styles.btnBlack}> Register</button>
+      <Link to='/login' >
+      <button className={styles.btnBlack}> Register</button>
+      </Link>
       </div>
        </div>
       </section>

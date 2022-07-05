@@ -2,9 +2,27 @@ import React from 'react'
 import styles from './modal.module.css'
 import logo from './assets/Logo.svg'
 import closeImg from './assets/Union.svg'
-
+import { useState,  useEffect } from 'react'
 
 const Modal = ({closeModalClick}) => {
+
+  const [jobs,setJobs] =  useState([])
+  useEffect(()=>{
+const getData = async() =>{
+
+const data = await fetch('https://vuejobs.com/api/jobs')
+const value = await data.json()
+setJobs(value)
+console.log(value)
+
+}
+getData()
+  }, [])
+
+ 
+  
+
+
   return (
     <div className={styles.container}>
 <div className={styles.modalContent}>
@@ -31,6 +49,7 @@ valuable as writing great code. We look for strong problem-solving skills and
 We need people who are humble, eager to learn, and always willing to help 
 others learn as well. We want to work with people who enjoy picking up a 
 problem and solving it, regardless of the technologies and techniques involved.
+{}
 <br/>
 <br/>
 <span className={styles.spanArticle} >

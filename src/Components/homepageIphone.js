@@ -1,34 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Homepage } from './homepage'
+import iphoneImg from './assets/Dashboard_iphonexspacegrey_portrait.png'
+import Menu from './Menu'
 import logo from './assets/Logo.svg'
-import mainImg from './assets/93.png'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 
+const HomepageIphone = () => {
+   const [MenuClicked , setMenuClicked] = useState(false)
+   function handleMenuClick(){
+      setMenuClicked(true)
+   }
+   function closeMenuClick(){
+      setMenuClicked(false)
+   }
 
-export function TextContent() {
-  return(
-<div className='txtContentContainer'>
-<h1 className='txtContentWhite'> Making  <span className='txtContentOrange'> job hunting
-</span> way too easier!
-</h1>
-<p className='txtContent-p' > One place with the best jobs companies in tech.
-Apply to all of them with a single profile 
-and get in touh with hiring managers. </p>
-<button className='start-btn'> Get Started</button>
-</div>
-)
-}
-
-export function Homepage({homeImg}) {
-const [menuClick, setMenuClick] = useState(false)
   return (
-    <div className='home-container'>
+    
+        <div className='home-container'>
        <nav className='nav' >
        <div className='logo-div'>
 <img src={logo} alt='' className='homeLogo' />
        </div>
  
-       <div className='menu-line'> 
+       <div className='menu-line' onClick={()=>handleMenuClick()}> 
        <span id='span1'></span>
        <span id='span2'></span>
        </div>
@@ -47,13 +43,17 @@ and get in touh with hiring managers. </p>
 <Link to='/homepage' ><button className='start-btn'> Get Started</button> </Link>
 </div>
    <div className='intro-content-img'>
-<img src={homeImg} alt='' className= 'mainImg'/>
+<img src={iphoneImg} alt='' className= 'iphoneImg'/>
 
 
 </div>
 </section>
+    {MenuClicked?<Menu closeClick={closeMenuClick}/>:null}
 
     </div>
+
+    
   )
 }
 
+export default HomepageIphone

@@ -3,6 +3,7 @@ import {TextContent} from './homepage'
 import styles from './register.module.css'
 import  logo from './assets/Logo.svg'
 import close from './assets/closeWhite.svg'
+import { Link } from 'react-router-dom'
 
 const LoginPage = () => {
   return (
@@ -15,8 +16,9 @@ const LoginPage = () => {
 
       <div className={styles.logDiv}>
       <div className={styles.closeBtndiv}>
-      <img src={logo} alt='logo' className={styles.logo}/> 
-      <button><img src={close} alt='close' className={styles.imgResize}/> </button>
+      <img src={logo} alt='logo' className={styles.logoLoginMobile}/> 
+      <Link to='/menu'>      <button ><img src={close} alt='close' className={styles.imgResize}/> </button>
+</Link>
       </div>
 
 
@@ -36,7 +38,9 @@ const LoginPage = () => {
          </div>
 
 <div  className={styles.btndiv}>
-  <button className={styles.loginBtn}> Login</button>
+<Link to='/dashboard' className={styles.loginBtn}>
+  <button > Login</button>
+ </Link>
 </div>
 </div>
 

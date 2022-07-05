@@ -31,9 +31,12 @@ margin: 0 auto;
 }
 .span{
    color: #E3B505;
+   font-size: inherit;
+
 }
 .spanBlow{
    color: #FA5805;
+   font-size: inherit;
 }
 
 .h1,.p,.button{

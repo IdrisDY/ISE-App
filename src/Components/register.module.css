@@ -79,11 +79,12 @@ padding-top: 2em;}
 
 
 
-.logo{
+.logoLoginMobile{
    position: relative;
    top: -1.3em;
    left: .8em;
    height: 106px;
+   display: none;
 }
 .registerDetails{
    display: flex;
@@ -103,6 +104,7 @@ h2{
    justify-content: flex-end;
    padding-top: 3.5em;
    padding-right: 1.35em;
+
 }
 .btnBlack{
    background: black;
@@ -119,6 +121,7 @@ h2{
    min-width: 30%;
    padding: .5em .5em .5em 0 ;
    font-size: 1.125rem;
+   text-align: center;
 }
 
 .h1{
