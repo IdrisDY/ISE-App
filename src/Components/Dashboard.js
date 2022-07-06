@@ -22,7 +22,7 @@ const Dashboard = () => {
 
 const JobDescription = ()=>{
    return(
-      <div className={dashStyles.jobDesc}>
+      <div onClick={openModalClick} className={dashStyles.jobDesc}>
 <div className={dashStyles.subjobDesc}> 
 <img src={logo} className={dashStyles.logoRepo} alt='logo' />
 <div className={dashStyles.reduce}>
@@ -31,7 +31,7 @@ const JobDescription = ()=>{
 </div>
 </div>
 
-<button onClick={openModalClick}><span>...</span> </button>
+<button ><span>...</span> </button>
 
       </div>
    )

@@ -141,6 +141,8 @@ gap: 4em;
    .btn{
       width: 100%;
       max-width: 200px;
+      font-size: 15px;
+      padding: 1em 2em;
    }
 .btnDiv{
    padding-bottom: 2em;

@@ -23,7 +23,7 @@ function App() {
       {/* <Blow/> */}
       <Routes>
       <Route path='/' element={
-      <div>
+      <div className='landingPage'>
     <Homepage homeImg={mainImg}/>
     <ThumbsUp/>
     <Blow/>  

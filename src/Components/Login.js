@@ -6,6 +6,18 @@ import close from './assets/closeWhite.svg'
 import { Link } from 'react-router-dom'
 
 const LoginPage = () => {
+//   const auth = getAuth();
+// signInWithEmailAndPassword(auth, email, password)
+//   .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+//     // ...
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//   });
+
   return (
     <section className={styles.container}>
 
@@ -26,15 +38,15 @@ const LoginPage = () => {
          <p className={styles.pReg}> Login to </p>
       <img src={logo} alt='logo' className={styles.logo}/>
       </div>
-      <div className={styles.txtWhite}>
-         <h2> Email Address</h2>
-         <h6 className={styles.h6white} > idrisadekunle726@gmail.com</h6>
+      <div className={styles.LogintxtWhite}>
+         <label> Email Address</label>
+         <input type='email' className={styles.h6white}/>
          </div>
 
          
-         <div className={styles.txtWhite}>
-         <h2>Password</h2>
-         <h6 className={styles.h6white} > ******</h6>
+         <div className={styles.LogintxtWhite}>
+         <label>Password</label>
+         <input className={styles.h6white} type='password' />
          </div>
 
 <div  className={styles.btndiv}>

@@ -29,21 +29,21 @@ export const Register = () => {
       </div>
       <div className={styles.registerDetails}>
 
-         <div>
-         <h2> Name</h2>
-         <h6> Disu Ade </h6>
+         <div className={styles.regtxtWhite} >
+         <label> Name</label>
+         <input type='text'  className={styles.inputVisible} />
          </div>
 
          
-         <div>
-         <h2> Email Address</h2>
-         <h6> idrisadekunle726@gmail.com</h6>
+         <div className={styles.regtxtWhite}>
+         <label> Email Address</label>
+         <input type='email' className={styles.inputVisible} />
          </div>
 
          
-         <div>
+         <div className={styles.regtxtWhite}>
          <h2>Password</h2>
-         <h6> ******</h6>
+         <input type='password' className={styles.inputVisible} />
          </div>
 
 

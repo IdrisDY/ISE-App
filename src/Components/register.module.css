@@ -89,8 +89,12 @@ padding-top: 2em;}
 .registerDetails{
    display: flex;
    flex-direction: column;
-   gap: 2em;
+   gap: 1em;
    padding: 0 1.37em;
+}
+.inputVisible{
+   outline: black;
+   border: black solid 1px;
 }
 h6{
    font-weight: 400;
@@ -127,15 +131,25 @@ h2{
 .h1{
   max-width: 100%;
 }
-.txtWhite,p,span{
+.LogintxtWhite,span{
    color: white;
 }
 .h6white{
-   color: #FFFFFF40;
+   /* color: #FFFFFF40; */
 }
 .logoWhiteMobile{
    display: none;
 }
+.LogintxtWhite{
+   display: flex;
+   flex-direction: column;
+}
+.regtxtWhite{
+   display: flex;
+   flex-direction: column;
+}
+
+
 @media(max-width:768px){
 .bgbrown{
    display: none;
@@ -143,7 +157,7 @@ h2{
 .logoWhite{
    display: flex;
 }
-.logoWhiteMobile{
+.logoWhiteMobile,.logoLoginMobile{
    display: flex;
 }
 .closeBtndiv{
@@ -160,12 +174,12 @@ h2{
    display: flex;
 }
 .btnBlack,.loginBtn{
-   width: 50%;
    max-width: 200px;
+   padding-left: .5em;
 }
 .imgResize{
 position: relative;
-top: -1.5em;
+top: .5em;
 }
 .txtLogoLogin{
    padding: 0;

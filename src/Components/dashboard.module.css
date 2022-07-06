@@ -97,7 +97,6 @@ span{
 }
 @media(max-width:768px){
    .container{
-      width: 100%;
       min-width: fit-content;
       padding: 27px 25px;
    }
@@ -123,7 +122,7 @@ span{
       letter-spacing: 2px;
    }
    .h1Div h1{
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 700;
       padding: .5em 0;
 
@@ -135,8 +134,8 @@ span{
 
    }
    h2{
-      font-size: 13px;
-      letter-spacing: 1.5px;
+      font-size: 20px;
+      letter-spacing: 1px;
 font-weight:700;
    }
    .jobDesc{
@@ -150,7 +149,7 @@ padding: 0 .8em 0 0;
       right: .5em;
    }
    .pJob{
-      font-size: 10px;
+      font-size: 15px;
       color: black;
    }
    .recent{
@@ -160,5 +159,11 @@ padding: 0 .8em 0 0;
    .btnSection{
       position: relative;
       top: -2em;
+   }
+   .saveBtn{
+      /* width: 40%; */
+      padding: 1em 2em;
+      font-size: 1rem;
+      max-width: 150px;
    }
 }

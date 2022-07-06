@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import logo from './assets/Logo.svg'
 import mainImg from './assets/93.png'
 import { Link } from 'react-router-dom'
+import { ThumbsUp } from './ThumbsUp';
+import Blow from './Blow';
 
 
 
@@ -52,6 +54,7 @@ and get in touh with hiring managers. </p>
 
 </div>
 </section>
+    
 
     </div>
   )
