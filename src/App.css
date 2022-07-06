@@ -197,7 +197,6 @@ margin: 0 auto;
 @media(max-width:768px){
   .home-container{
     padding: 1em;
-    width: 100%;
   }
   .home-main{
 flex-direction: column;
