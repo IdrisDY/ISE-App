@@ -70,9 +70,10 @@ margin: 0 auto;
 .container{
 display: flex;
 flex-direction: column;
-width:100%;
 height: fit-content;
 padding:2em 1em;
+width: inherit;
+overflow: hidden;
 }
 .imgDiv,.imgDivblow{
    width: 70%;
