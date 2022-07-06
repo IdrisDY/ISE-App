@@ -5,9 +5,26 @@ import closeImg from './assets/Union.svg'
 import LogoBlack from './assets/LogoBlack.svg'
 import  logo from './assets/Logo.svg'
 import { Link } from 'react-router-dom'
-
+import  {useState} from 'react'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../Firebase'
 
 export const Register = () => {
+   const [email, setEmail]= useState('')
+   const [password, setPassword]= useState('')
+   const [username, setUsername]= useState('')
+
+ 
+   const Register = async() =>{
+try{
+   const user = await createUserWithEmailAndPassword(auth,email,password,username)
+   console.log(user)
+}
+catch(error){
+   console.log(error)
+}
+   }
+   
   return (
     
       <section className={styles.container}> 
@@ -31,19 +48,19 @@ export const Register = () => {
 
          <div className={styles.regtxtWhite} >
          <label> Name</label>
-         <input type='text'  className={styles.inputVisible} />
+         <input type='text'  className={styles.inputVisible} onChange={(event)=>setUsername(event.target.value)}  />
          </div>
 
          
          <div className={styles.regtxtWhite}>
          <label> Email Address</label>
-         <input type='email' className={styles.inputVisible} />
+         <input type='email' className={styles.inputVisible} onChange={(event)=>setEmail(event.target.value)} />
          </div>
 
          
          <div className={styles.regtxtWhite}>
          <h2>Password</h2>
-         <input type='password' className={styles.inputVisible} />
+         <input type='password' className={styles.inputVisible}onChange={(event)=>setPassword(event.target.value)} />
          </div>
 
 
@@ -51,7 +68,7 @@ export const Register = () => {
       </div>
       <div className={styles.btndiv}>
       <Link to='/login' >
-      <button className={styles.btnBlack}> Register</button>
+      <button className={styles.btnBlack} onClick={Register}> Register</button>
       </Link>
       </div>
        </div>
