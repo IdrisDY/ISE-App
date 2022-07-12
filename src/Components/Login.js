@@ -7,11 +7,15 @@ import { Link } from 'react-router-dom'
 import  {useState} from 'react'
 import {  signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../Firebase'
+import { useNavigate } from 'react-router-dom'
 
 const LoginPage = () => {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
+  const [errMessage, seterrMessage]= useState('')
+
   const [error, setError] =  useState(false)
+  const navigate = useNavigate()
 //   const auth = getAuth();
 // signInWithEmailAndPassword(auth, email, password)
 //   .then((userCredential) => {
@@ -38,14 +42,21 @@ const Login = async(e) =>{
   try{
     const user = await signInWithEmailAndPassword(auth,email,password)
     console.log(user)
+    navigate('/dashboard')
  }
  catch(error){
     console.error(error)  
       console.log('true')
       setError(true)
+      seterrMessage(error.message)
  }
- 
-error? console.log('Sorry,wrong email or password'):console.log('')
+ }
+ error?console.log('Sorry,wrong email or password'):console.log('')
+const ErrorBox =()=>{
+  return(
+    <p className={styles.error}> Authentication Error, Please Input Valid Email and Password</p>
+
+  )
 }
   return (
     <section className={styles.container}>
@@ -67,6 +78,7 @@ error? console.log('Sorry,wrong email or password'):console.log('')
          <p className={styles.pReg}> Login to </p>
       <img src={logo} alt='logo' className={styles.logo}/>
       </div>
+      {error?<ErrorBox/>:null}
       <div className={styles.LogintxtWhite}>
          <label> Email Address</label>
          <input type='email' className={styles.h6white} onChange={(event)=> getEmail(event)} />
@@ -79,8 +91,8 @@ error? console.log('Sorry,wrong email or password'):console.log('')
          </div>
 
 <div  className={styles.btndiv}>
- <button onClick={Login} disabled={error} className={styles.loginBtn}>  <Link to= {error?'/login':'/dashboard'} disabled={error} className={styles.linkBtn}>
- Login</Link> 
+ <button onClick={Login} disabled={error} className={styles.loginBtn}>  
+ Login
 </button>
 
 </div>

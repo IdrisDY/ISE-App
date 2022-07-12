@@ -14,8 +14,8 @@ width: 100%;
    gap: 2em;
 }
 .imgResize{
-   width: 40px;
-   height: 40px;
+   width: 30px;
+   height: 30px;
 }
 h1{
    color:#FA5805;
@@ -134,9 +134,7 @@ span{
 
    }
    h2{
-      font-size: 20px;
-      letter-spacing: 1px;
-font-weight:700;
+      font-size: 15px;
    }
    .jobDesc{
 padding: 0 .8em 0 0;
@@ -161,9 +159,8 @@ padding: 0 .8em 0 0;
       top: -2em;
    }
    .saveBtn{
-      /* width: 40%; */
       padding: 1em 2em;
       font-size: 1rem;
-      max-width: 150px;
+      /* max-width: 150px; */
    }
 }

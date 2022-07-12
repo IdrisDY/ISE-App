@@ -163,6 +163,7 @@ width: 100%;
   font-size: 2.2rem;
 margin: 0 auto;
   display: flex;
+  font-family: inherit;
 }
 .Loginpage-btn-div{
   display: flex;
