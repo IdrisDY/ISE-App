@@ -111,6 +111,9 @@ height: 90vh;
   gap: 1.5em;
 min-width: 50%;
 }
+label{
+  font-weight: 500;
+}
 .mainImg{
   width: 50%;
   /* margin: 0 auto; */

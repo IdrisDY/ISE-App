@@ -59,7 +59,7 @@ catch(error){
 
          
          <div className={styles.regtxtWhite}>
-         <h2>Password</h2>
+         <label>Password</label>
          <input type='password' className={styles.inputVisible}onChange={(event)=>setPassword(event.target.value)} />
          </div>
 

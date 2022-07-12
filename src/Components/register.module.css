@@ -93,8 +93,9 @@ padding-top: 2em;}
    padding: 0 1.37em;
 }
 .inputVisible{
-   outline: black;
-   border: black solid 1px;
+   border-bottom: black solid 1px;
+   width: 80%;
+   font-family: inherit;
 }
 h6{
    font-weight: 400;
@@ -135,10 +136,17 @@ h2{
    color: white;
 }
 .h6white{
-   /* color: #FFFFFF40; */
+   border-bottom: rgb(255, 255, 255) solid 1px;
+   width: 80%;
+   background-color: black;
+   color: rgb(169, 166, 166);
+   font-family: inherit;
 }
 .logoWhiteMobile{
    display: none;
+}
+.linkBtn{
+width: 100%;
 }
 .LogintxtWhite{
    display: flex;
@@ -186,4 +194,8 @@ top: .5em;
 .txtLogoLogin{
    padding: 0;
 }
+.inputVisible,.h6white{
+   width: 100%;
+}
+
 }

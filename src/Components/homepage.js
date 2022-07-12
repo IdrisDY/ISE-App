@@ -13,7 +13,7 @@ export function TextContent() {
 <h1 className='txtContentWhite'> Making  <span className='txtContentOrange'> job hunting
 </span> way too easier!
 </h1>
-<p className='txtContent-p' > One place with the best jobs companies in tech.
+<p className='intro-p' > One place with the best jobs companies in tech.
 Apply to all of them with a single profile 
 and get in touh with hiring managers. </p>
 <button className='start-btn'> Get Started</button>

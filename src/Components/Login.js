@@ -11,7 +11,7 @@ import { auth } from '../Firebase'
 const LoginPage = () => {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
-
+  const [error, setError] =  useState(false)
 //   const auth = getAuth();
 // signInWithEmailAndPassword(auth, email, password)
 //   .then((userCredential) => {
@@ -23,16 +23,29 @@ const LoginPage = () => {
 //     const errorCode = error.code;
 //     const errorMessage = error.message;
 //   });
-const Login = async() =>{
+
+const getPassword=(event)=>{
+  setPassword(event.target.value)
+  setError(false)
+}
+const getEmail=(event)=>{
+  setEmail(event.target.value)
+  setError(false)
+}
+
+const Login = async(e) =>{
+  e.preventDefault()
   try{
     const user = await signInWithEmailAndPassword(auth,email,password)
     console.log(user)
  }
  catch(error){
-    console.log(error)
+    console.error(error)  
+      console.log('true')
+      setError(true)
  }
  
-
+error? console.log('Sorry,wrong email or password'):console.log('')
 }
   return (
     <section className={styles.container}>
@@ -56,19 +69,20 @@ const Login = async() =>{
       </div>
       <div className={styles.LogintxtWhite}>
          <label> Email Address</label>
-         <input type='email' className={styles.h6white} onChange={(event)=>setEmail(event.target.value)} />
+         <input type='email' className={styles.h6white} onChange={(event)=> getEmail(event)} />
          </div>
 
          
          <div className={styles.LogintxtWhite}>
          <label>Password</label>
-         <input className={styles.h6white} type='password'onChange={(event)=>setPassword(event.target.value)} />
+         <input className={styles.h6white} type='password'onChange={(event)=>getPassword(event)} />
          </div>
 
 <div  className={styles.btndiv}>
-<Link to='/dashboard' className={styles.loginBtn}>
-  <button onClick={Login}> Login</button>
- </Link>
+ <button onClick={Login} disabled={error} className={styles.loginBtn}>  <Link to= {error?'/login':'/dashboard'} disabled={error} className={styles.linkBtn}>
+ Login</Link> 
+</button>
+
 </div>
 </div>
 
