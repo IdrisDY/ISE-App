@@ -9,11 +9,16 @@ import {  signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../Firebase'
 import { useNavigate } from 'react-router-dom'
 
+
+export function ErrorBox (){
+  return(
+    <p className={styles.error}> Authentication Error, Please Input Valid Email and Password</p>
+
+  )
+}
 const LoginPage = () => {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
-  const [errMessage, seterrMessage]= useState('')
-
   const [error, setError] =  useState(false)
   const navigate = useNavigate()
 //   const auth = getAuth();
@@ -48,16 +53,11 @@ const Login = async(e) =>{
     console.error(error)  
       console.log('true')
       setError(true)
-      seterrMessage(error.message)
  }
  }
  error?console.log('Sorry,wrong email or password'):console.log('')
-const ErrorBox =()=>{
-  return(
-    <p className={styles.error}> Authentication Error, Please Input Valid Email and Password</p>
 
-  )
-}
+
   return (
     <section className={styles.container}>
 
@@ -76,7 +76,7 @@ const ErrorBox =()=>{
 
       <div className={ styles.txtLogoLogin}>
          <p className={styles.pReg}> Login to </p>
-      <img src={logo} alt='logo' className={styles.logo}/>
+      <img src={logo} alt='logo' className={styles.logoB}/>
       </div>
       {error?<ErrorBox/>:null}
       <div className={styles.LogintxtWhite}>

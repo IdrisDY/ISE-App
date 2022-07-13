@@ -66,6 +66,7 @@ padding-top: 2em;}
    position: absolute;
    bottom: 0;
    left: 20%;
+   top: 5em;
 }
 .txtLogoLogin::after{
    content: '';
@@ -73,7 +74,7 @@ padding-top: 2em;}
    width: 100%;
    background: rgb(255, 255, 255);
    position: absolute;
-   bottom: 0;
+   bottom: 1em;
    left: 20%;
 }
 
@@ -151,6 +152,7 @@ width: 100%;
 .LogintxtWhite{
    display: flex;
    flex-direction: column;
+   padding: 0 1em;
 }
 .regtxtWhite{
    display: flex;
@@ -160,13 +162,20 @@ width: 100%;
    color: white;
    background-color: rgb(53, 51, 51);
    position: absolute;
-top: 10%;
+top: 14%;
 z-index: 9999;
 border-radius: .5em;
-width: 80%;
 font-size: 15px;
 padding: .5em .5em;
 transition: ease-in-out 3s;
+text-align: center;
+display: flex;
+align-self: center;
+}
+.logoB{
+   position: relative;
+   top: -.5em;
+   left: .5em;
 }
 
 @media(max-width:768px){
@@ -197,6 +206,7 @@ transition: ease-in-out 3s;
 .btnBlack,.loginBtn{
    max-width: 200px;
    padding-left: .5em;
+   width: 40%;
 }
 .imgResize{
 position: relative;
@@ -205,6 +215,10 @@ top: .5em;
 .txtLogoLogin{
    padding: 0;
 }
+.txtLogoLogin::after{
+   top: 3em;
+}
+
 .inputVisible,.h6white{
    width: 100%;
 }
