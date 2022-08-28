@@ -4,7 +4,7 @@ import { TextContent } from './homepage'
 import closeImg from './assets/Union.svg'
 import LogoBlack from './assets/LogoBlack.svg'
 import  logo from './assets/Logo.svg'
-import { Link, Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import  {useState} from 'react'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../Firebase'
@@ -28,9 +28,7 @@ export const Register = () => {
     const postEmail=(event)=>{
       setEmail(event.target.value)
       setError(false)
-    }
-    
-
+ }   
    const Register = async() =>{
 try{
    const user = await createUserWithEmailAndPassword(auth,email,password,username)
@@ -42,7 +40,6 @@ catch(error){
    setError(true)
 }
    }
-   
   return (
     
       <section className={styles.container}> 
@@ -55,7 +52,7 @@ catch(error){
       <div className={styles.closeBtndiv}> 
       <img src={LogoBlack} alt='logo' className={styles.logoWhiteMobile}/> 
 
-      <Link to='/menu' >      <button><img src={closeImg} alt='close' className={styles.imgResize}/> </button>
+      <Link to='/menu'><button><img src={closeImg} alt='close' className={styles.imgResize}/> </button>
 </Link>
       </div>
       <div className={ styles.txtLogo}>
@@ -64,30 +61,21 @@ catch(error){
       </div>
       <div className={styles.registerDetails}>
       {error?<ErrorBox/>:null}
-
          <div className={styles.regtxtWhite} >
          <label> Name</label>
          <input type='text'  className={styles.inputVisible} onChange={(event)=>setUsername(event.target.value)}  />
          </div>
-
          <div className={styles.regtxtWhite}>
          <label> Email Address</label>
          <input type='email' className={styles.inputVisible} onChange={(event)=>postEmail(event)} />
          </div>
-
-         
          <div className={styles.regtxtWhite}>
          <label>Password</label>
          <input type='password' className={styles.inputVisible}onChange={(event)=>postPassword(event)} />
          </div>
-
-
-
       </div>
       <div className={styles.btndiv}>
-      
       <button className={styles.btnBlack} onClick={Register}> Register</button>
-    
       </div>
        </div>
       </section>
