@@ -56,7 +56,7 @@ catch(error){
 </Link>
       </div>
       <div className={ styles.txtLogo}>
-         <p className={styles.pReg}> Register to </p>
+         <p className={styles.pReg} > Register to </p>
       <img src={LogoBlack} alt='logo' className={styles.logoB}/>
       </div>
       <div className={styles.registerDetails}>

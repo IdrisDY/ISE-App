@@ -30,7 +30,7 @@ getData()
 <div className={styles.txtlogo}>
 <img src={logo} className={styles.logoChange} alt='logo' />
 <div className={styles.txtTitle}>
-<h2> FrontEnd Developer</h2>
+<h2 data-testid= 'count'>FrontEnd Developer</h2>
 <p className={styles.pBlack} > Oga Ise - FullTime</p>
 </div>
 </div>

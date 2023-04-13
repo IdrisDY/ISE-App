@@ -1,5 +1,4 @@
 import React from 'react'
-import { Homepage } from './homepage'
 import iphoneImg from './assets/Dashboard_iphonexspacegrey_portrait.png'
 import Menu from './Menu'
 import logo from './assets/Logo.svg'
@@ -39,7 +38,7 @@ const HomepageIphone = () => {
 </h1>
 <p className='intro-p'> One place with the best jobs companies in tech.
 Apply to all of them with a single profile 
-and get in touh with hiring managers. </p>
+and get in touch with hiring managers. </p>
 <Link to='/homepage' ><button className='start-btn'> Get Started</button> </Link>
 </div>
    <div className='intro-content-img'>

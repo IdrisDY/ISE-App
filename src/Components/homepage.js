@@ -4,10 +4,11 @@ import mainImg from './assets/93.png'
 import { Link } from 'react-router-dom'
 import { ThumbsUp } from './ThumbsUp';
 import Blow from './Blow';
-
+import Menu from './Menu';
 
 
 export function TextContent() {
+
   return(
 <div className='txtContentContainer'>
 <h1 className='txtContentWhite'> Making  <span className='txtContentOrange'> job hunting
@@ -16,13 +17,20 @@ export function TextContent() {
 <p className='intro-p' > One place with the best jobs companies in tech.
 Apply to all of them with a single profile 
 and get in touh with hiring managers. </p>
-<button className='start-btn'> Get Started</button>
+<button className='start-btn'>Get Started</button>
 </div>
 )
 }
 
 export function Homepage({homeImg}) {
 const [menuClick, setMenuClick] = useState(false)
+function handleMenuClick(){
+  setMenuClick(true)
+}
+function closeMenuClick(){
+  setMenuClick(false)
+}
+
   return (
     <div className='home-container'>
        <nav className='nav' >
@@ -30,7 +38,7 @@ const [menuClick, setMenuClick] = useState(false)
 <img src={logo} alt='' className='homeLogo' />
        </div>
  
-       <div className='menu-line'> 
+       <div className='menu-line' onClick={()=>handleMenuClick()}> 
        <span id='span1'></span>
        <span id='span2'></span>
        </div>
@@ -54,7 +62,8 @@ and get in touh with hiring managers. </p>
 
 </div>
 </section>
-    
+        {menuClick?<Menu closeClick={closeMenuClick}/>:null}
+
 
     </div>
   )

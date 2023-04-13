@@ -129,6 +129,14 @@ h2{
    font-size: 1.125rem;
    text-align: center;
 }
+.loginBtn:focus{
+   color: black;
+   background: gray;
+}
+.btnBlack:focus{
+   color: white;
+   background: gray;
+}
 
 .h1{
   max-width: 100%;
@@ -167,10 +175,22 @@ z-index: 9999;
 border-radius: .5em;
 font-size: 15px;
 padding: .5em .5em;
-transition: ease-in-out 3s;
 text-align: center;
 display: flex;
 align-self: center;
+animation: slide linear .7s;
+}
+
+@keyframes slide{
+   from{
+      opacity:0;
+      transform: translateX(100%);
+   }
+   to{
+      opacity: 1;
+      transform: translateX(0%);
+
+   }
 }
 .logoB{
    position: relative;
